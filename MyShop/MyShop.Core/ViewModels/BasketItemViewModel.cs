@@ -8,7 +8,7 @@ namespace MyShop.Core.ViewModels
 {
     public class BasketItemViewModel
     {
-        public string id { get; set; } //basketitemId
+        public string Id { get; set; } //basketitemId
         public int Quantity { get; set; }
         public string ProductName { get; set; }
         public decimal Price { get; set; }

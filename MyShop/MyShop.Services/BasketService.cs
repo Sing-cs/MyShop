@@ -116,7 +116,7 @@ namespace MyShop.Services
                               join p in productContext.Collection() on b.ProductId equals p.Id
                               select new BasketItemViewModel()
                                   {
-                                      id = b.Id,
+                                      Id = b.Id,
                                       Quantity = b.Quantity,
                                       ProductName = p.Name,
                                       Image = p.Image,
@@ -147,7 +147,7 @@ namespace MyShop.Services
                                         select item.Quantity * p.Price).Sum();
 
                 model.BasketCount = basketCount ?? 0;
-                model.BasketTotal = basketCount ?? decimal.Zero;
+                model.BasketTotal = basketTotal ?? decimal.Zero;
 
                 return model;
             }
