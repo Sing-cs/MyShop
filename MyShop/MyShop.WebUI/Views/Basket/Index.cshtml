@@ -50,6 +50,8 @@
     <tr>
         <td colspan="4" style="text-align:right"><strong>BasketTotal</strong></td>
         <td>@String.Format("{0:c}", (from p in Model select p.Price * p.Quantity).Sum())</td>
+        <td><a href="@Url.Action("CheckOut", "Basket")">Check Out</a></td>
     </tr>
+
 
 </table>
